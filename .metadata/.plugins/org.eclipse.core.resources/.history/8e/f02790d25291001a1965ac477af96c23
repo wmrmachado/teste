@@ -1,0 +1,7 @@
+package br.com.universidade.implementacao;
+
+public class Aluno extends Pessoa{
+	private int numeroMatricula;
+	private String responsavel;
+
+}

@@ -1,0 +1,47 @@
+package br.com.itau.beans;
+
+public class Tecnologia extends Formacao{
+	private boolean planoEstendido;
+	
+	public void calcularMensalidade(double fator) {
+		setMensalidade(getDuracao() * fator * 600);
+		
+	}
+	
+	
+	
+//Contrutor inicio =======================================
+	public Tecnologia() {
+		super();
+	}
+
+	public Tecnologia(String descricao, int periodo, double mensalidade, int duracao, boolean planoEstendido) {
+		super(descricao, periodo, mensalidade, duracao);
+		this.planoEstendido = planoEstendido;
+	}
+	
+//Contrutor Fim =======================================
+	
+//Getters e Setters inicio =======================================
+	
+	public String GetAll() {
+		return planoEstendido + "\n" + super.getAll();
+	}
+	
+	public void setAll(String descricao, int periodo, double mensalidade, int duracao, boolean planoEstendido) {
+		super.setAll(descricao, periodo, mensalidade, duracao);
+		this.planoEstendido = planoEstendido;
+	}
+
+	public boolean isPlanoEstendido() {
+		return planoEstendido;
+	}
+
+	public void setPlanoEstendido(boolean planoEstendido) {
+		this.planoEstendido = planoEstendido;
+	}
+	
+	
+	
+
+}

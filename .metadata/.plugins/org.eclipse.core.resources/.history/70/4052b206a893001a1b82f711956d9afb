@@ -1,0 +1,52 @@
+package br.com.itau.beans;
+
+public class Bacharelado extends Formacao{
+	private String projetoConclusao;
+	private int cargaHorarioEstagia;
+	
+	
+	public Bacharelado() {
+		super();
+	}
+
+
+	public Bacharelado(String descricao, int periodo, double mensalidade, int duracao, String projetoConclusao,
+			int cargaHorarioEstagia) {
+		super(descricao, periodo, mensalidade, duracao);
+		this.projetoConclusao = projetoConclusao;
+		this.cargaHorarioEstagia = cargaHorarioEstagia;
+	}
+	
+	public void setAll(String descricao, int periodo, double mensalidade, int duracao, String projetoConclusao,
+			int cargaHorarioEstagia) {
+		super.setAll(descricao, periodo, mensalidade, duracao);
+		this.projetoConclusao = projetoConclusao;
+		this.cargaHorarioEstagia = cargaHorarioEstagia;
+	}
+	
+
+
+	public String getProjetoConclusao() {
+		return projetoConclusao;
+	}
+
+
+	public void setProjetoConclusao(String projetoConclusao) {
+		this.projetoConclusao = projetoConclusao;
+	}
+
+
+	public int getCargaHorarioEstagia() {
+		return cargaHorarioEstagia;
+	}
+
+
+	public void setCargaHorarioEstagia(int cargaHorarioEstagia) {
+		this.cargaHorarioEstagia = cargaHorarioEstagia;
+	}
+	
+	
+	
+	
+
+}

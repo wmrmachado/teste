@@ -1,0 +1,9 @@
+package br.com.itau.beans;
+
+public class Bacharelado extends Formacao{
+	private String projetoConclusao;
+	private int cargaHorarioEstagia;
+	
+	
+
+}

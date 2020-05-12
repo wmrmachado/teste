@@ -1,0 +1,32 @@
+package projeto_Pilha;
+
+public class Pilha {
+	private int topo;
+	private int vetor[];
+	
+	public Pilha() {
+		vetor = new int [10];
+		topo = -1;
+	}
+
+	public boolean vazio() {
+		return (topo == -1);
+// o return feito como acima equivale ao IF/Else abaixo comentado		
+//		if (topo == -1) {
+//			return true;
+//		}else {
+//			return false;
+//		}
+	
+	}
+	
+	public boolean cheio() {
+		if (topo == 9) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+
+}

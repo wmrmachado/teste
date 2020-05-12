@@ -1,0 +1,24 @@
+package collection_framework;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class TesteLista {
+
+	public static void main(String[] args) {
+		// Não é possivel instanciar pela interface = 
+		//= List lista = new List();
+		
+		List <String> lista = new ArrayList <>();
+		lista.add(10);
+		lista.add("nome");
+		lista.add(true);
+		System.out.println(lista);
+		
+		
+		
+		
+	}
+
+}

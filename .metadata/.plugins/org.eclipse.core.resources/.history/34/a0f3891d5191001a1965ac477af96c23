@@ -1,0 +1,31 @@
+package testeBanco;
+
+import sistemaBanco.Cliente;
+import sistemaBanco.ContaCorrente;
+import sistemaBanco.Endereco;
+
+public class TesteConstrutorCheio {
+
+	public static void main(String[] args) {
+		
+		ContaCorrente conta = new ContaCorrente(
+				500,
+				new Cliente(
+						"Wagner",
+						"12345",
+						new Endereco(
+								"rua",
+								(short) 15,
+								"apto 100",
+								"centro",
+								"1234 678"
+								)
+						)
+				);
+		System.out.println(conta.getAll());
+		
+	}
+		
+}
+
+

@@ -1,0 +1,71 @@
+package br.com.itau.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.itau.beans.Bacharelado;
+import br.com.itau.beans.Formacao;
+import br.com.itau.beans.Medio;
+import br.com.itau.beans.Tecnologia;
+
+
+public class TesteFormacao {
+	
+	public static String texto(String msg) {
+		return JOptionPane.showInputDialog("msg").toUpperCase();
+	}
+	
+	public static int inteiro(String msg) {
+		return Integer.parseInt(texto(msg));
+	}
+	
+	public static double decimal(String msg) {
+		return Double.parseDouble(texto(msg));
+	}
+	public static boolean vf(String msg) {
+		return Boolean.parseBoolean(texto(msg));
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		Formacao formacao = null;
+		String resposta = JOptionPane.showInputDialog("Qual formação deseja cadastrar: \n<L> para Livro ou \n<C> para CD");
+		if (resposta.contentEquals("BACHARELADO")){
+			formacao = new Bacharelado(
+					texto("Digite a descrição: "),
+					inteiro("Digite o periodo: "),
+					decimal("Digite a mensalidade: "),
+					inteiro("Digite a duração: "),
+					texto("Digite o projeto de conclusao: "),
+					inteiro("Digite a carga horario do estagio: ")
+					);
+			
+		}else if(resposta.contentEquals("TECNOLOGIA")) {
+			formacao = new Tecnologia(
+					texto("Digite a descrição: "),
+					inteiro("Digite o periodo: "),
+					decimal("Digite a mensalidade: "),
+					inteiro("Digite a duração: "),
+					vf("Digite o projeto de conclusao: ")
+					);
+			
+		}else if(resposta.contentEquals("MEDIO")) {
+			formacao = new Medio(
+					inteiro("Digite o Codigo: "),
+					decimal("Digite o valor: "),
+					texto("Digite a descrição do livro: "),
+					texto("Digite a Gravadora: "),
+					texto("Digite artista: ")
+					);
+		}else{
+			System.out.println("Opção invalido");
+		}
+		
+		System.out.println(formacao.getAll());
+		System.out.println(formacao.calcularMensalidade());
+
+	}
+
+}

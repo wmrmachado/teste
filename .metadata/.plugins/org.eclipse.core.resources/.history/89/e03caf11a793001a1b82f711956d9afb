@@ -1,0 +1,8 @@
+package br.com.itau.beans;
+
+public class Tecnologia extends Formacao{
+	private boolean planoEstendido;
+	
+	
+
+}

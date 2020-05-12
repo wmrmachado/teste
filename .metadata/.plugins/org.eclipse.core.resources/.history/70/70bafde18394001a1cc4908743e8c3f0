@@ -1,0 +1,14 @@
+package collection_framework;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TesteMap {
+
+	public static void main(String[] args) {
+		//Primeiro o tipo do dado da Chave que será unico
+		//Segundo o tipo de dado comum ==> List
+		Map <String, Cargo> lista = new HashMap();
+	}
+
+}

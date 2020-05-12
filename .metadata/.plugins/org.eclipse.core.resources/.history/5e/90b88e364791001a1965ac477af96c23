@@ -1,0 +1,10 @@
+package testeBanco;
+
+public class TesteSetIndividual {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

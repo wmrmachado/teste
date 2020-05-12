@@ -1,0 +1,7 @@
+package sistemaBanco;
+
+public class ContaCorrente {
+	private double saldo;
+	private Cliente cliente;
+	
+}

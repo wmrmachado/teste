@@ -1,0 +1,22 @@
+package projeto_Pilha;
+
+public class Teste {
+	public static void main(String[] args) {
+		Pilha objeto = new Pilha();
+		
+		System.out.println(objeto.vazio());
+		System.out.println(objeto.cheio());
+		
+		objeto.inserir(50);
+		objeto.inserir(60);
+		objeto.inserir(70);
+		objeto.inserir(80);
+		objeto.inserir(90);
+		objeto.inserir(100);
+		
+		System.out.println(objeto.vazio());
+		System.out.println(objeto.cheio());
+		
+	}
+
+}

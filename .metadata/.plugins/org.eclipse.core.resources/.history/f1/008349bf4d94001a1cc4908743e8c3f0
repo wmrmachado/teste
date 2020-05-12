@@ -1,0 +1,6 @@
+package br.com.itau.interfaces;
+
+public class PadraoFormacao {
+	void calcularMensalidade(double fator);
+		
+}

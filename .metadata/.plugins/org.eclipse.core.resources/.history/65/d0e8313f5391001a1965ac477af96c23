@@ -1,0 +1,15 @@
+package br.com.universidade.modelo;
+
+import br.com.universidade.implementacao.Pessoa;
+
+public class Aluno extends Pessoa{
+	private int numeroMatricula;
+	private String responsavel;
+	
+	public Aluno() {
+		super();
+	}
+	
+	
+
+}

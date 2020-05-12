@@ -1,0 +1,31 @@
+package teste;
+
+import javax.swing.JOptionPane;
+
+import modelo.Endereco;
+import modelo.Professor;
+
+public class TesteConstrutorCheio {
+	
+	public static String s(String msg) {
+		return JOptionPane.showInputDialog(msg);
+	}
+
+	public static void main(String[] args) {
+		Professor objetoProfessor = new Professor(
+				s("Digite o nome: "),
+				s("Digite o apelido: "),
+				s("Digite a materia: "),
+				new Endereco(
+						JOptionPane.showInputDialog("Digite o logradouro: "),
+						JOptionPane.showInputDialog("Digite o numero: "),
+						JOptionPane.showInputDialog("Digite o bairro: "),
+						JOptionPane.showInputDialog("Digite a cidade: "),
+						JOptionPane.showInputDialog("Digite o UF: "),
+						JOptionPane.showInputDialog("Digite o cep: "))
+				);
+		System.out.println(objetoProfessor.getAll());
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package collection_framework;
+
+import java.util.Set;
+
+public class TesteSet {
+
+	public static void main(String[] args) {
+		// Criamos pela interface
+		// Instanciamos pela class (implementação)
+		
+		Set lista = new HashSet();
+		lista.add("DBA");
+		lista.add("ANALISTA");
+		lista.add("DEV");
+		System.out.println(lista);
+
+	}
+
+}

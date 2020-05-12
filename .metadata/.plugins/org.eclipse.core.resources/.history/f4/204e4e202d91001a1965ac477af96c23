@@ -1,0 +1,33 @@
+package teste;
+
+import modelo.Aluno;
+import modelo.Endereco;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		//-- Retorna todas as informações de uma vez
+		Aluno objetoAluno = new Aluno();
+		
+		Endereco objetoEndereco = new Endereco();
+		objetoEndereco.setAll("RUA XPTO", "419", "ROSA DE FRANCA", "GUARULHOS", "SP", "12345-123");
+		
+		objetoEndereco.setLogradouro("lsdf");
+		//objetoEndereco.setUf("1234");
+		
+		objetoAluno.setAll("Wagner",  2611, "wagner@itau", objetoEndereco);
+		System.out.println(objetoAluno.getAll());
+		
+		//-- Retorna informação uma a uma
+		//objetoAluno.setNome(JOptionPane.showInputDialog("Digite o nome").toUpperCase());		
+		//objetoAluno.setNumeroMatricula(Integer.parseInt(JOptionPane.showInputDialog("Digite o numero da matricula")));				
+		//objetoAluno.setEmail(JOptionPane.showInputDialog("Digite o email").toLowerCase());
+		
+		//System.out.println("O nome é.............: " + objetoAluno.getNome());
+		//System.out.println("Numero da Matricula é: " + objetoAluno.getNumeroMatricula());
+		//System.out.println("O email é............: " + objetoAluno.getEmail());
+		//System.out.println("Até logo...");
+	}
+
+}

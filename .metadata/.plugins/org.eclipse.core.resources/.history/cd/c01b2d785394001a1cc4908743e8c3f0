@@ -1,0 +1,13 @@
+package projeto_Pilha;
+
+public class Pilha {
+	private int topo;
+	private int vetor[];
+	
+	public Pilha() {
+		vetor = new int [10];
+		topo = -1;
+	}
+
+	
+}

@@ -1,0 +1,39 @@
+package modelo;
+//public = acesso total (+)
+//private = restrição total (-)
+//package = acesso somente se estiver no mesmo diretorio (~)
+
+public class Aluno {
+	private String nome;
+	private int numeroMatricula;
+	private String email;
+	
+	public String retornarNome() {
+		return nome;
+	}
+	
+	public void adicionarNome(String pNome) {
+		nome = pNome;
+	}
+	
+	
+	
+	public int retornarNumeroMatricula() {
+		return numeroMatricula;
+	}
+	
+	public void adicionarNumeroMatricula(int pNumeroMatricula) {
+		numeroMatricula = pNumeroMatricula;
+	}
+	
+	
+	
+	public String retornarEmail() {
+		return email;
+	}
+	
+	public void adicionarEmail(String pEmail) {
+		email = pEmail;
+	}
+	
+}

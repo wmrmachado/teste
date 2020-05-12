@@ -1,0 +1,40 @@
+package testeBanco;
+
+import javax.swing.JOptionPane;
+
+import sistemaBanco.Cliente;
+import sistemaBanco.Endereco;
+
+public class TesteConstrutorCheio {
+
+	public static void main(String[] args) {
+		
+		public static String s(String msg) {
+			return JOptionPane.showInputDialog("Digite o(a)" + msg);
+		}
+		
+		public static int i(String msg) {
+			return Integer.parseInt(s(msg));
+		}
+		
+
+		public static void main(String[] args) {
+			
+			int x = i("Digite um numero");
+			
+			Cliente objetoCliente = new Cliente(
+					s("nome: "),
+					s("cpf: "),
+					new Endereco(
+							s("logradouro: "),
+							Short.parseShort(JOptionPane.showInputDialog("Digite o numero: " + msg )),
+							s("Complemento"),
+							s("bairro: "),
+							s("cep: "))
+					);
+			System.out.println(objetoProfessor.getAll());
+			
+		}
+
+	}
+

@@ -1,0 +1,13 @@
+package br.com.itau.implementacao;
+
+import br.com.itau.beans.Livro;
+
+public class TestePrincipal {
+
+	public static void main(String[] args) {
+		Livro livro = new Livro(1234, 55.20, "Livro Java", "IS1234", "Autor Fulano");
+		System.out.println(livro.getAll());
+
+	}
+
+}

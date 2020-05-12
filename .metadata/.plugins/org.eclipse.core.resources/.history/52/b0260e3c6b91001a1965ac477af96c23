@@ -1,0 +1,31 @@
+package br.com.itau.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.itau.beans.CompactDisc;
+import br.com.itau.beans.Livro;
+
+public class TestePrincipal {
+
+	public static void main(String[] args) {
+		Livro livro = new Livro(
+				Integer.parseInt(JOptionPane.showInputDialog("Digite o ISBN: ")),
+				Double.parseDouble(JOptionPane.showInputDialog("Digite o valor: ")),
+				JOptionPane.showInputDialog("Digite a descrição do livro: "),
+				JOptionPane.showInputDialog("Digite o ISBN: "),
+				JOptionPane.showInputDialog("Digite o autor: ")
+				);
+		System.out.println(livro.getAll());
+		
+		CompactDisc disc = new CompactDisc(
+				5678,
+				10.50,
+				"CD Java",
+				"Gravadora Sony",
+				"Artista XPTO"
+				);
+		System.out.println("\n" + disc.getAll());
+
+	}
+
+}
